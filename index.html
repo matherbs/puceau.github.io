@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <!-- GOOGLE Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Charmonman:wght@400;700&family=Great+Vibes&family=Major+Mono+Display&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <title>Moi Puceau ?</title>
+</head>
+      
+<script>
+function afficher(){
+var saisie =document.getElementById("uname").value;
+var nombre =document.getElementById("nombre").value;
+alert("Si tu t'appelles "+ saisie+", t'es surement le plus gros PUCEAU de ta bande de "+nombre+" meilleurs amis !");
+}
+</script>
+<body>
+
+    <form>
+        <div class="container">
+            <label for="uname"><b>Entre ton nom :</b></label>
+            <input type="text" id="uname"  value="" size="30" required>
+
+            <label for="nombre"><b>Combien de meilleurs amis as tu ?</b></label>
+            <input type="text" id="nombre"  value="" size="30" required>
+      
+          <button type="button" id="bouton" value="Afficher" size="30" onclick="afficher()">Login</button>
+          <label>
+        </div>
+      </form>
+      
+  </body>
+  </html>
